@@ -1,6 +1,39 @@
 .top-bar {
-    background-color: #141434;
-    padding: 10px 10px 10px 10px;
+    background-color: #131921;
+    color: white;
+    height: 80px;
     width: 100%;
-    color: rgb(234, 15, 15);
+    display: flex; 
+    align-items: center;
+    justify-content: space-between; /* space between left and right items */
+    padding: 0 20px; /* spacing on sides */
+    box-sizing: border-box;
+    position: fixed; /* stays on top while scrolling */
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
+
+.nav-left {
+    flex: 1;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 70px;      /* Make your logo large, e.g., 40-45px */
+    width: auto;
+    margin: 0 0px;
+    padding: 0;
+    display: block;
+}
+
+.logo img:hover {
+    cursor: pointer;
+    border: 2px solid #d0d0d0;
+    }
+
+

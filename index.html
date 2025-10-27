@@ -9,9 +9,10 @@
 <body>
     <header>
         <div class="top-bar">
+            <!-- Left section: Logo and Delivery -->
             <div class="nav-left">
                 <div class="logo">
-                    <a href=index.html id="amazon-logo"><img src="assets/image.png" alt="Amazon Logo" /></a>
+                    <a href="index.html" id="amazon-logo"><img src="assets/image.png" alt="Amazon Logo" /></a>
                 </div>
                 <div class="delivery-block">
                     <a href="#" id="delivery">
@@ -27,6 +28,46 @@
                         </div>
                     </a>
                 </div>
+            </div>
+
+            <!-- Middle section: Search Bar -->
+            <div class="nav-fill">
+                <div class="search-wrapper" aria-label="Search">
+                    <form id="nav-search-bar-form" class="nav-search-bar" action="#" method="get">
+                        <!-- Custom Dropdown Button -->
+                        <div class="search-category-dropdown" id="categoryDropdown">
+                            <span class="dropdown-selected" id="selectedCategory">All</span>
+                            <svg class="dropdown-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M7 10l5 5 5-5" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            
+                            <!-- Dropdown Menu -->
+                            <div class="dropdown-menu" id="dropdownMenu">
+                                <div class="dropdown-item active" data-value="all">All Departments</div>
+                                <div class="dropdown-item" data-value="electronics">Electronics</div>
+                                <div class="dropdown-item" data-value="fashion">Fashion</div>
+                                <div class="dropdown-item" data-value="home">Home & Kitchen</div>
+                                <div class="dropdown-item" data-value="books">Books</div>
+                                <div class="dropdown-item" data-value="sports">Sports & Outdoors</div>
+                                <div class="dropdown-item" data-value="beauty">Beauty & Personal Care</div>
+                                <div class="dropdown-item" data-value="toys">Toys & Games</div>
+                            </div>
+                        </div>
+                        
+                        <input type="text" name="q" class="search-input" placeholder="Search Amazon.in" aria-label="Search" />
+                        <button type="submit" class="search-button" aria-label="Submit search">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                                <circle cx="11" cy="11" r="9" stroke="currentColor" stroke-width="2"/>
+                                <path d="m21 21-4.35-4.35" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Right section: Account, Cart, etc. -->
+            <div class="nav-right">
+                <!-- Future: Account info, cart, etc. will go here -->
             </div>
         </div>
     </header>

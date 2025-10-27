@@ -1,3 +1,7 @@
+:root body{
+    font-family: Arial, sans-serif;
+}
+
 .top-bar {
     background-color: #131921;
     color: white;
@@ -13,14 +17,14 @@
     left: 0;
     z-index: 1000;
 }
-
 .nav-left {
-    flex: 1;
-}
-
-.logo {
     display: flex;
     align-items: center;
+}
+.logo a{
+    display: flex;
+    align-items: center;
+    padding: 1px 20px 0 0;
 }
 
 .logo img {
@@ -29,11 +33,63 @@
     margin: 0 0px;
     padding: 0;
     display: block;
+    border: 2px solid transparent; /* Invisible border maintains consistent sizing */
+    border-radius: 4px;
 }
 
 .logo img:hover {
     cursor: pointer;
     border: 2px solid #d0d0d0;
-    }
+}
 
+.delivery-block a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    padding: 10px 9px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    min-height: 48px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.delivery-block a:hover {
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.icon-location {
+    margin-right: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.icon-location svg {
+    width: 22px;
+    height: 22px;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.0;
+}
+
+.delivery-name {
+    font-size: 16px;
+    color: #cccccc;
+    margin-bottom: 0px;
+    font-weight: 400;
+    line-height: 14px;
+}
+
+.delivery-state-pincode {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    line-height: 15px;
+    margin-top: 5px;
+}
 

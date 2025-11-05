@@ -136,6 +136,13 @@
     height: 50px;
     width: 100%;
     position: relative;
+    border: 2px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+.nav-search-bar:focus-within {
+    border: 2px solid #f90;
+    box-shadow: 0 0 0 3px rgba(255, 153, 0, 0.3);
 }
 
 .search-input {
@@ -164,6 +171,7 @@
     justify-content: center;
     color: #333;
     min-width: 45px;
+    border-radius: 0 4px 4px 0;
 }
 
 .search-button:hover {
@@ -171,8 +179,8 @@
 }
 
 .search-button svg {
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
 }
 
 /* Add gap between items in nav-left */
@@ -291,3 +299,54 @@
     background: #555;
 }
 
+/* Right section: Account and Cart */
+.nav-right {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0; /* Don't compress this section */
+    gap: 8px;
+}
+
+/* Language Selector */
+.nav-lang {
+    display: flex;
+    align-items: center;
+}
+
+.language-link {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px 9px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    min-height: 48px;
+    box-sizing: border-box;
+    height: 75px;
+}
+
+.language-link:hover {
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.inner-class {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    gap: 5px;
+    font-size: 18px;
+    padding-top: 15px;
+}
+
+.language-flag {
+    display: flex;
+    align-items: center;
+}
+
+.language-flag img {
+    height: 18px;
+    width: auto;
+    display: block;
+}

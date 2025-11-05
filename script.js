@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Toggle dropdown on click
     dropdown.addEventListener('click', function(e) {
-        e.preventDefault();
-        e.stopPropagation();
+        // e.preventDefault();
+        // e.stopPropagation();
         
         // Toggle the dropdown
         dropdown.classList.toggle('open');
@@ -31,10 +31,11 @@ document.addEventListener('DOMContentLoaded', function() {
             const value = this.getAttribute('data-value');
             const text = this.textContent;
             
+            // Show full category name without truncation
             if (value === 'all') {
                 selectedCategory.textContent = 'All';
             } else {
-                selectedCategory.textContent = text.length > 12 ? text.substring(0, 12) + '...' : text;
+                selectedCategory.textContent = text;
             }
             
             // Close dropdown
